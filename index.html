@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Oyna</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="task-manager">
+      <div class="add-task">
+        <input type="text" id="input" placeholder="Yangi task kiriting..." />
+        <button id="add-btn">+</button>
+      </div>
+
+      <div class="tasks-section">
+        <h3>Tasks to do - 4</h3>
+        <div class="task-list">
+          <div class="task-item">
+            <p>${value}</p>
+            <div class="actions">
+              <button onclick="moveItem(event)">
+                <img src="./images/Check.svg" alt="" srcset="" />
+              </button>
+              <button onclick="deleteItem(event)">
+                <img src="./images/Vector (1).svg" alt="" srcset="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tasks-section done-section">
+        <h3>Done - 1</h3>
+        <div class="task-list">
+          <div class="task-item completed">
+            <span>To study React fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
